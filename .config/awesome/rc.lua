@@ -562,3 +562,11 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+
+-- Gaps
+beautiful.useless_gap = 10 
+
+-- Autostart
+
+awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/6.jpg")
