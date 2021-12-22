@@ -14,20 +14,20 @@ local theme = {}
 theme.font          = "mononoki 11"
 
 theme.bg_normal     = "#262624"
-theme.bg_focus      = "#70aea1"
+theme.bg_focus      = "#6ba499"
 theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+theme.bg_minimize   = "#262624"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#e6e6e6"
+theme.fg_focus      = "#e6e6e6"
+theme.fg_urgent     = "#e6e6e6"
+theme.fg_minimize   = "#e6e6e6"
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.border_normal = "#111111"
+theme.border_focus  = "#6ba499"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
