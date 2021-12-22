@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+color=$(xcolor | xclip -selection c -filter)
+notify-send "xcolor" "$color (copied to clipboard)"
