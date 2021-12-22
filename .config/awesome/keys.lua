@@ -60,6 +60,14 @@ globalkeys = gears.table.join(
             end
         end,
         {description = "go back", group = "client"}),
+    -- Show/Hide Wibox
+    awful.key({ modkey }, "p", function ()
+             for s in screen do
+                 s.mywibox.visible = not s.mywibox.visible
+            end
+         end,
+              {description = "toggle wibox", group = "awesome"}),
+    
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
@@ -68,6 +76,14 @@ globalkeys = gears.table.join(
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
+    awful.key({ NULL              }, "Print", function () awful.spawn.with_shell("screenshot") end,
+              {description = "take screenshot", group = "launcher"}),
+    awful.key({ modkey,           }, "Print", function () awful.spawn.with_shell("screenshot --select") end,
+              {description = "take screenshot from selection", group = "launcher"}),
+    awful.key({ modkey,  "Shift"  }, "Print", function () awful.spawn.with_shell("screenshot --qr") end,
+              {description = "scan qr", group = "launcher"}),
+    awful.key({ modkey,           }, "'", function () awful.spawn.with_shell("color-picker") end,
+              {description = "pick a color from a pixel", group = "launcher"}),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),

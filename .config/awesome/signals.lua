@@ -1,5 +1,7 @@
+local gears = require("gears")
 local beautiful = require("beautiful")
 local awful = require("awful")
+local wibox = require("wibox")
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
