@@ -4,7 +4,28 @@ local awful = require("awful")
 local beautiful = require("beautiful")
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock("%a %d-%m-%y %H:%M:%S", 1, "+00:00")
+
+-- load widgets
+local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
+local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
+local net_speed_widget = require("awesome-wm-widgets.net-speed-widget.net-speed")
+local todo_widget = require("awesome-wm-widgets.todo-widget.todo")
+local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
+
+local cw = calendar_widget({
+    placement = 'top_right',
+    start_sunday = false,
+    previous_month_button = 1,
+    next_month_button = 3,
+})
+
+mytextclock:connect_signal("button::press",
+    function(_, _, _, button)
+        if button == 1 then cw.toggle() end
+    end)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -100,17 +121,34 @@ awful.screen.connect_for_each_screen(function(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
+            logout_menu_widget(),
+            -- mylauncher,
             s.mytaglist,
+            s.mylayoutbox,
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
             wibox.widget.systray(),
+            volume_widget({step = 1}),
+            todo_widget(),
+            weather_widget({
+                api_key='e80b3fb4606dbcf80480d4b47687ff2a',
+                coordinates = {-34.7003,-58.59465},
+                time_format_12h = false,
+                units = 'metric',
+                both_units_widget = true,
+                font_name = 'Carter One',
+                icons = 'weather-underground-icons',
+                icons_extension = '.png',
+                show_hourly_forecast = true,
+                show_daily_forecast = true,
+            }),
+            cpu_widget(),
+            net_speed_widget(),
+            -- mykeyboardlayout,
             mytextclock,
-            s.mylayoutbox,
         },
     }
 end)
