@@ -9,7 +9,7 @@ config push
 ```
 
 ## TODO
-- [ ] Add neovim plugins
 - [ ] Edit wofi style
 - [ ] Configure ranger
+- [ ] Configure kitty
 - [ ] Fix errors
