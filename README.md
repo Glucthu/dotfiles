@@ -8,8 +8,8 @@ config commit -m ""
 config push
 ```
 
-TODO
--[ ] Add neovim plugins
--[ ] Edit wofi style
--[ ] Configure ranger
--[ ] Fix errors
+## TODO
+- [ ] Add neovim plugins
+- [ ] Edit wofi style
+- [ ] Configure ranger
+- [ ] Fix errors
