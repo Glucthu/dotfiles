@@ -8,8 +8,10 @@ config commit -m ""
 config push
 ```
 
-## TODO
-- [ ] Edit wofi style
-- [ ] Configure ranger
-- [ ] Configure kitty
-- [ ] Fix errors
+## Programs I need to configure
+- kitty
+- ranger
+- zsh
+- zathura
+- eww
+- hyprland (winrules)
