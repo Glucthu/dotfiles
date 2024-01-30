@@ -16,3 +16,4 @@ config push
 - eww
 - hyprland (winrules)
 - nvim
+- wofi
