@@ -15,3 +15,4 @@ config push
 - zathura
 - eww
 - hyprland (winrules)
+- nvim
