@@ -1,0 +1,11 @@
+width = 350
+lines = 10
+
+prompt = Launch
+
+allow_images = true
+allow_markup = true
+
+exec_search = true
+
+gtk_dark = true
