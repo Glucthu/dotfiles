@@ -9,11 +9,4 @@ config push
 ```
 
 ## Programs I need to configure
-- kitty
-- ranger
-- zsh
-- zathura
 - eww
-- hyprland (winrules)
-- nvim
-- wofi
