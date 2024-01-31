@@ -1,7 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
-CASE_SENSITIVE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 zstyle ':omz:update' frequency 7
@@ -29,5 +28,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export ARCHFLAGS="-arch x86_64"
+export RANGER_LOAD_DEFAULT_RC="FALSE"
 
 alias config='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
