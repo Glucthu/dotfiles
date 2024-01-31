@@ -1,0 +1,46 @@
+set selection-clipboard clipboard
+
+set statusbar-basename true
+
+set font "Hack Nerd Font 12"
+
+set notification-error-bg       "#ff568e"
+set notification-error-fg       "#43435a"
+set notification-warning-bg     "#efff73"
+set notification-warning-fg     "#43435a"
+set notification-bg             "#73a9ff"
+set notification-fg             "#43435a"
+
+set completion-group-bg         "#43435a"
+set completion-group-fg         "#bdc3df"
+set completion-bg               "#53536b"
+set completion-fg               "#bdc3df"
+set completion-highlight-bg     "#bdc3df"
+set completion-highlight-fg     "#2a2a2a"
+
+set index-bg                    "#2a2a2a"
+set index-fg                    "#bdc3df"
+set index-active-bg             "#bdc3df"
+set index-active-fg             "#2a2a2a"
+
+set inputbar-bg                 "#43435a"
+set inputbar-fg                 "#bdc3df"
+
+set statusbar-bg                "#43435a"
+set statusbar-fg                "#bdc3df"
+
+set highlight-color             "#bdc3df"
+set highlight-active-color      "#2a2a2a"
+set highlight-transparency      0.3
+
+set default-bg                  "#2a2a2a"
+set default-fg                  "#bdc3df"
+set render-loading              true
+set render-loading-fg           "#2a2a2a"
+set render-loading-bg           "#2a2a2a"
+
+set recolor                     true
+set recolor-lightcolor          "#2a2a2a"
+set recolor-darkcolor           "#bdc3df"
+set recolor-keephue             true
+set recolor-reverse-video       true
