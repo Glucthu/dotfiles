@@ -16,10 +16,11 @@ plugins=(
 	safe-paste
 	web-search
 	copyfile
-  archlinux
-  emoji-clock
-  lol
-  rand-quote
+	archlinux
+	emoji-clock
+	lol
+	rand-quote
+	sudo
 )
 
 source $ZSH/oh-my-zsh.sh
