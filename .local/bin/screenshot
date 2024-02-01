@@ -2,13 +2,13 @@
 
 if [ "$(hyprctl activewindow)" = "Invalid" ] ; then
   sleep 0.3
-	grim - | wl-copy
+	grim - | swappy -f -
 else
   geometry="$(hyprctl clients -j | jq -r ".[] | select(.workspace.id == "$(hyprctl activewindow -j | jq -r '.workspace.id')\)""| jq -r ".at,.size" | jq -s "add" | jq '_nwise(4)' | jq -r '"\(.[0]),\(.[1]) \(.[2])x\(.[3])"'| slurp)"
   if [ -z $geometry ]; then
     sleep 0.1
-    grim - | wl-copy
+    grim - | swappy -f -
   else
-    grim -g $geometry - | wl-copy
+    grim -g $geometry - | swappy -f -
   fi
 fi
