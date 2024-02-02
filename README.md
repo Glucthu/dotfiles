@@ -7,6 +7,3 @@ config add ...
 config commit -m ""
 config push
 ```
-
-## Programs I need to configure
-- eww
