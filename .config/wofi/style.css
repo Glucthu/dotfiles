@@ -1,6 +1,6 @@
 #input {
   background-color: #2a2a2a;
-  border: 3px solid #bdc3df;
+  border: 3px solid #71c2d9;
   border-bottom: 0;
   color: #bdc3df;
   border-radius: 7px 7px 0 0;
@@ -8,15 +8,38 @@
 
 #entry {
   background-color: #2a2a2a;
+  border-radius: 0;
 }
 
 #entry:selected {
   background-color: #53536b;
+  border-radius: 0;
 }
 
 #scroll {
   background-color: #2a2a2a;
-  border: 3px solid #bdc3df;
+  border: 3px solid #71c2d9;
   border-top: 0;
   border-radius: 0 0 7px 7px;
 }
+
+#window {
+  border-radius: 7px;
+}
+
+#outer-box {
+  border-radius: 7px;
+}
+
+#inner-box {
+  border-radius: 0 0 7px 7px;
+}
+
+#img {
+  margin-right: 5px;
+}
+
+#text {
+  font-weight: bold;
+}
+
