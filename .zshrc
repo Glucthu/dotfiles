@@ -37,8 +37,13 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export ARCHFLAGS="-arch x86_64"
 export RANGER_LOAD_DEFAULT_RC="FALSE"
+export CFLAGS=-DNO_TRUE_COLOURS=1
+export CC=clang CXX=clang++
 
 alias config='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias ls=lsd
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=$PATH:/home/glucthu/.spicetify
