@@ -42,6 +42,7 @@ export CC=clang CXX=clang++
 
 alias config='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ls=lsd
+alias spotify='spotify --no-zygote --disable-gpu'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
