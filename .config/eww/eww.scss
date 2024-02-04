@@ -1,0 +1,77 @@
+$bg: #3a3a3a;
+$fg: #bdc3df;
+
+$border-col: #71c2d9;
+$border-radius: 7px;
+$border-size: 3px;
+
+$font-size: 14px;
+
+.bar {
+	background-color: transparent;
+}
+
+.main-container {
+	margin: 10px 10px 5px;
+}
+
+.workspaces {
+	background-color: $bg;
+	border-radius: $border-radius;
+	color: $fg;
+	border: $border-size solid $border-col;
+	padding: 5px;
+  font-size: $font-size;
+}
+
+.workspaces * {
+  border: 1px solid transparent;
+}
+
+.music {
+	background-color: $bg;
+	border-radius: $border-radius;
+	color: $fg;
+	border: $border-size solid $border-col;
+	padding: 5px ;
+	font-size: $font-size;
+}
+
+.music * {
+  border: 1px solid transparent;
+}
+
+.time {
+	background: $bg;
+	border-radius: $border-radius;
+	color: $fg;
+	font-size: $font-size;
+	padding: 5px;
+	border: $border-size solid $border-col;
+	text-shadow: none;
+}
+
+.time * {
+  border: 1px solid transparent;
+}
+
+.time:hover {
+    background: #4a4a4a;
+}
+
+.clipboard_manager{
+    margin-right: 10px;
+    background: transparent;
+}
+
+.clipboard-item{
+    background: $bg;
+    color: $fg;
+    text-shadow: none;
+    border: $border-size solid $border-col;
+    border-radius: $border-radius;
+}
+
+.clipboard-item:hover{
+    background: #4a4a4a;
+}
