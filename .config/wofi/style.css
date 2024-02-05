@@ -1,5 +1,9 @@
+#window {
+  animation: 0.3s fade-in;
+}
+
 #input {
-  background-color: #2a2a2a;
+  background-color: #3a3a3a;
   border: 3px solid #71c2d9;
   border-bottom: 0;
   color: #bdc3df;
@@ -7,7 +11,7 @@
 }
 
 #entry {
-  background-color: #2a2a2a;
+  background-color: #3a3a3a;
   border-radius: 0;
 }
 
@@ -17,7 +21,7 @@
 }
 
 #scroll {
-  background-color: #2a2a2a;
+  background-color: #3a3a3a;
   border: 3px solid #71c2d9;
   border-top: 0;
   border-radius: 0 0 7px 7px;
@@ -43,3 +47,11 @@
   font-weight: bold;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
