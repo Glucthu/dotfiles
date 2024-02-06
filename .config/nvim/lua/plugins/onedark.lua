@@ -4,6 +4,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      style = "warmer",
       colorscheme = "onedark",
     },
   },
