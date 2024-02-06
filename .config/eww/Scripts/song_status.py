@@ -17,8 +17,8 @@ while True:
         status = status.split("-")
         status = f"{status[0]} - {status[1]}"
 
-        if len(status) >= 32:
-            status = status[0:len(status)-(len(status) - 31)]
+        if len(status) >= 48:
+            status = status[0:len(status)-(len(status) - 48)]
             status = f"{status}.."
     
         subprocess.run(f"echo '{status}'",shell=True)

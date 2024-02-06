@@ -7,6 +7,10 @@ $border-size: 3px;
 
 $font-size: 14px;
 
+* {
+  all: unset;
+}
+
 .bar {
 	background-color: transparent;
 }
@@ -28,7 +32,7 @@ $font-size: 14px;
   border: 1px solid transparent;
 }
 
-.music {
+.active_window {
 	background-color: $bg;
 	border-radius: $border-radius;
 	color: $fg;
@@ -37,11 +41,11 @@ $font-size: 14px;
 	font-size: $font-size;
 }
 
-.music * {
+.active_window * {
   border: 1px solid transparent;
 }
 
-.time {
+.system_tray {
 	background: $bg;
 	border-radius: $border-radius;
 	color: $fg;
@@ -51,7 +55,7 @@ $font-size: 14px;
 	text-shadow: none;
 }
 
-.time * {
+.system_tray * {
   border: 1px solid transparent;
 }
 
@@ -77,13 +81,14 @@ $font-size: 14px;
 }
 
 .poweroff-btn {
+  animation: 0.3s fade-in;
   background-color: transparent;
 }
 
 .poweroff{
   background: #FF568E;
   padding: 60px;
-  transition: 1s margin, 1s padding;
+  transition: 0.75s margin, 0.75s padding;
   margin: 78px 0 0 114px;
   border-radius: 60px 30px 0 30px;
   font-size: 4em;
@@ -95,13 +100,14 @@ $font-size: 14px;
 }
 
 .reboot-btn {
+  animation: 0.3s fade-in;
   background: transparent;
 }
 
 .reboot{
   background: #64DE83;
   padding: 60px;
-  transition: 1s margin, 1s padding;
+  transition: 0.75s margin, 0.75s padding;
   margin: 78px 114px 0 0;
   border-radius: 30px 60px 30px 0px;
   font-size: 4em;
@@ -114,13 +120,14 @@ $font-size: 14px;
 
 
 .sleep-btn {
+  animation: 0.3s fade-in;
   background: transparent;
 }
 
 .sleep{
   background: #73A9FF;
   padding: 60px;
-  transition: 1s margin, 1s padding;
+  transition: 0.75s margin, 0.75s padding;
   margin: 0 0 78px 114px;
   border-radius: 30px 0px 30px 60px;
   font-size: 4em;
@@ -132,13 +139,14 @@ $font-size: 14px;
 }
 
 .logout-btn {
+  animation: 0.3s fade-in;
   background: transparent;
 }
 
 .logout{
   background: #946FF7;
   padding: 60px;
-  transition: 1s margin, 1s padding;
+  transition: 0.75s margin, 0.75s padding;
   margin: 0 78px 114px 0;
   border-radius: 0px 30px 60px 30px;
   font-size: 4em;
@@ -150,5 +158,32 @@ $font-size: 14px;
 }
 
 .menu-background {
-  background: rgba(#000, 1)
+  animation: 0.3s fade-in;
+  background: #2a2a2a;
+}
+
+@keyframes fade-in  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } 
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: $fg;
+  color: $bg;
+  border-radius: $border-radius;
+}
+
+.metric scale trough {
+  all: unset;
+  background-color: #4a4a4a;
+  border-radius: $border-radius;
+  min-height: 3px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
